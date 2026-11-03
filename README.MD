@@ -13,9 +13,9 @@ once with **Flexbox** and once with **CSS Grid** — so the two layout systems c
 
 | Version | Link |
 | --- | --- |
-| 🏠 Landing | `https://USERNAME.github.io/spotify-ui-clone/` |
-| 1️⃣ Flexbox | `https://USERNAME.github.io/spotify-ui-clone/flex/` |
-| 2️⃣ Grid | `https://USERNAME.github.io/spotify-ui-clone/grid/` |
+| 🏠 Landing | `https://TahaSoumbate.github.io/spotify-ui-clone/` |
+| 1️⃣ Flexbox | `https://TahaSoumbate.github.io/spotify-ui-clone/flex/` |
+| 2️⃣ Grid | `https://TahaSoumbate.github.io/spotify-ui-clone/grid/` |
 
 ---
 
