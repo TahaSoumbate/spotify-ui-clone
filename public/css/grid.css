@@ -1,0 +1,160 @@
+/* =========================================================
+   Spotify UI Clone — CSS Grid version
+   ========================================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-top: #243b47;
+  --bg-bottom: #121212;
+  --surface: #1e5e77;
+  --surface-hover: #2a7b9b;
+  --pill: rgba(255, 255, 255, 0.1);
+  --muted: #b3b3b3;
+  --radius: 12px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #fff;
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  background-attachment: fixed;
+}
+
+header { padding: 16px 24px 48px; }
+a { text-decoration: none; color: inherit; }
+
+/* ---------- Top bar ---------- */
+.box1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.box1 > span { display: grid; grid-auto-flow: column; gap: 8px; }
+.box1 > div  { display: grid; grid-auto-flow: column; align-items: center; gap: 8px; }
+
+.box1 > span a,
+.box1 > div a:not(:first-child) {
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.box1 > span a:hover,
+.box1 > div a:not(:first-child):hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.08);
+}
+
+.box1 > div a:first-child {
+  display: inline-grid;
+  place-items: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+.box1 > div a:first-child:hover { transform: scale(1.04); }
+
+/* ---------- Filter pills ---------- */
+.box2 {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 10px;
+  margin: 20px 0;
+}
+.box2 p {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--pill);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.box2 p:first-child { background: #fff; color: #000; font-weight: 600; }
+.box2 p:not(:first-child):hover { background: rgba(255, 255, 255, 0.25); }
+
+/* ---------- Artist shortcuts ---------- */
+.box3 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.box3 span a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+  height: 64px;
+  width: 100%;
+  background: var(--surface);
+  border-radius: var(--radius) 6px 6px var(--radius);
+  overflow: hidden;
+  transition: background 0.2s ease;
+}
+.box3 span a:hover { background: var(--surface-hover); }
+
+.box3 img { width: 64px; height: 64px; object-fit: cover; }
+.box3 p { font-size: 0.9rem; font-weight: 600; padding-right: 12px; }
+
+/* ---------- Section heading ---------- */
+.box4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px 0 16px;
+}
+.box4 h2 { font-size: 1.4rem; }
+.box4 p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.box4 p:hover { color: #fff; text-decoration: underline; }
+
+/* ---------- Daily mixes ---------- */
+.box5 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+.box5 > div {
+  padding: 12px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.04);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.box5 > div:hover {
+  background: rgba(255, 255, 255, 0.09);
+  transform: translateY(-4px);
+}
+.box5 img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.box5 p:nth-child(2) { font-weight: 600; margin-bottom: 4px; }
+.box5 p:nth-child(3) { font-size: 0.8rem; color: var(--muted); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .box3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .box5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  header { padding: 12px 16px 32px; }
+  .box3 { grid-template-columns: 1fr; }
+  .box5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

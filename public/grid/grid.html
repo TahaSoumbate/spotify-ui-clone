@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify UI — Flexbox</title>
+  </head>
+  <body>
+    <header>
+      <div class="box1">
+        <span>
+          <a href="#" aria-label="Go back"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg></a>
+          <a href="#" aria-label="Go forward"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg></a>
+        </span>
+        <div>
+          <a href="#">Explore Premium</a>
+          <a href="#" aria-label="Notifications"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+</svg></a>
+          <a href="#" aria-label="Friends"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+</svg></a>
+          <a href="#" aria-label="Profile"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-grin" viewBox="0 0 16 16">
+  <path d="M12.946 11.398A6.002 6.002 0 0 1 2.108 9.14c-.114-.595.426-1.068 1.028-.997C4.405 8.289 6.48 8.5 8 8.5s3.595-.21 4.864-.358c.602-.07 1.142.402 1.028.998a5.95 5.95 0 0 1-.946 2.258m-.078-2.25C11.588 9.295 9.539 9.5 8 9.5s-3.589-.205-4.868-.352c.11.468.286.91.517 1.317A37 37 0 0 0 8 10.75a37 37 0 0 0 4.351-.285c.231-.407.407-.85.517-1.317m-1.36 2.416c-1.02.1-2.255.186-3.508.186s-2.488-.086-3.507-.186A5 5 0 0 0 8 13a5 5 0 0 0 3.507-1.436ZM6.488 7c.114-.294.179-.636.179-1 0-1.105-.597-2-1.334-2C4.597 4 4 4.895 4 6c0 .364.065.706.178 1 .23-.598.662-1 1.155-1 .494 0 .925.402 1.155 1M12 6c0 .364-.065.706-.178 1-.23-.598-.662-1-1.155-1-.494 0-.925.402-1.155 1a2.8 2.8 0 0 1-.179-1c0-1.105.597-2 1.334-2C11.403 4 12 4.895 12 6"/>
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m0-1A7 7 0 1 1 8 1a7 7 0 0 1 0 14"/>
+</svg></a>
+        </div>
+      </div>
+
+      <div class="box2">
+        <p>All</p>
+        <p>Music</p>
+        <p>Podcasts</p>
+      </div>
+
+      <div class="box3">
+        <span
+          ><a href="#"
+            ><img src="../image/images.jfif" alt="Anuel AA" />
+            <p>Anuel AA</p></a
+          ></span
+        >
+        <span
+          ><a href="#"
+            ><img src="../image/images.jfif" alt="Anuel AA" />
+            <p>Anuel AA</p></a
+          ></span
+        >
+        <span
+          ><a href="#"
+            ><img src="../image/images.jfif" alt="Anuel AA" />
+            <p>Anuel AA</p></a
+          ></span
+        >
+        <span
+          ><a href="#"
+            ><img src="../image/images.jfif" alt="Anuel AA" />
+            <p>Anuel AA</p></a
+          ></span
+        >
+        <span
+          ><a href="#"
+            ><img src="../image/images.jfif" alt="Anuel AA" />
+            <p>Anuel AA</p></a
+          ></span
+        >
+        <span
+          ><a href="#"
+            ><img src="../image/images.jfif" alt="Anuel AA" />
+            <p>Anuel AA</p></a
+          ></span
+        >
+        <span
+          ><a href="#"
+            ><img src="../image/images.jfif" alt="Anuel AA" />
+            <p>Anuel AA</p></a
+          ></span
+        >
+        <span
+          ><a href="#"
+            ><img src="../image/images.jfif" alt="Anuel AA" />
+            <p>Anuel AA</p></a
+          ></span
+        >
+      </div>
+
+      <div class="box4">
+        <h2>Made For Forkani</h2>
+        <p>Show all</p>
+      </div>
+
+      <div class="box5">
+        <div>
+          <img src="../image/images.jfif" alt="Daily Mix 1" />
+          <p>Daily Mix 1</p>
+          <p>Abraham Mateo, KAROL G, Camilo and more</p>
+        </div>
+        <div>
+          <img src="../image/images.jfif" alt="Daily Mix 1" />
+          <p>Daily Mix 1</p>
+          <p>Abraham Mateo, KAROL G, Camilo and more</p>
+        </div>
+        <div>
+          <img src="../image/images.jfif" alt="Daily Mix 1" />
+          <p>Daily Mix 1</p>
+          <p>Abraham Mateo, KAROL G, Camilo and more</p>
+        </div>
+        <div>
+          <img src="../image/images.jfif" alt="Daily Mix 1" />
+          <p>Daily Mix 1</p>
+          <p>Abraham Mateo, KAROL G, Camilo and more</p>
+        </div>
+        <div>
+          <img src="../image/images.jfif" alt="Daily Mix 1" />
+          <p>Daily Mix 1</p>
+          <p>Abraham Mateo, KAROL G, Camilo and more</p>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

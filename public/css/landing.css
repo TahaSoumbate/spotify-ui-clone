@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background:
+    radial-gradient(circle at 15% 0%, #1e5e77 0%, transparent 45%),
+    radial-gradient(circle at 85% 10%, #2a7b9b 0%, transparent 40%),
+    linear-gradient(180deg, #243b47 0%, #121212 100%);
+}
+
+.landing {
+  width: min(1000px, 100%);
+}
+
+.landing__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.landing__header h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  letter-spacing: -0.02em;
+}
+
+.landing__header p {
+  margin-top: 12px;
+  color: #b3b3b3;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card__badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1ed760;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+}
+
+.card p {
+  color: #b3b3b3;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.card code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.85em;
+}
+
+.card__cta {
+  margin-top: auto;
+  padding-top: 16px;
+  font-weight: 600;
+  color: #1ed760;
+}
+
+.landing__footer {
+  margin-top: 48px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6a6a6a;
+}
+
+@media (max-width: 720px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

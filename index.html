@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify UI Clone — Flexbox vs Grid</title>
+    <link rel="stylesheet" href="./public/css/landing.css" />
+  </head>
+  <body>
+    <main class="landing">
+      <header class="landing__header">
+        <h1>Spotify UI Clone</h1>
+        <p>Same design. Two layout engines. Pick your fighter.</p>
+      </header>
+
+      <section class="cards">
+        <a class="card" href="./public/flex/flex.html">
+          <span class="card__badge">Version 01</span>
+          <h2>Flexbox</h2>
+          <p>
+            Built with <code>display: flex</code> — one-dimensional layouts,
+            wrapping rows and quick alignment.
+          </p>
+          <span class="card__cta">Open project →</span>
+        </a>
+
+        <a class="card" href="./public/grid/grid.html">
+          <span class="card__badge">Version 02</span>
+          <h2>CSS Grid</h2>
+          <p>
+            Built with <code>display: grid</code> — two-dimensional layouts with
+            explicit track definitions.
+          </p>
+          <span class="card__cta">Open project →</span>
+        </a>
+      </section>
+
+      <footer class="landing__footer">HTML · CSS · No frameworks</footer>
+    </main>
+  </body>
+</html>
