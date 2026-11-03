@@ -3,7 +3,7 @@
 A recreation of the Spotify web-player home screen, built **twice** with pure HTML & CSS:
 once with **Flexbox** and once with **CSS Grid** — so the two layout systems can be compared side by side.
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![HTML5]
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![No Frameworks](https://img.shields.io/badge/frameworks-none-1ed760?style=flat)
 
